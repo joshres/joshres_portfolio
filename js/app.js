@@ -21,6 +21,7 @@ window.onclick = function(event) {
     }
 };
 
+// change the hambuger menu icon to an X 
 function changeMenu(x) {
     x.classList.toggle("change");
   }
