@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: azure;
+}
+
+/*************** Link Styles ***************/
+
+a {
+    text-decoration: none;
+}
+
+/*************** Nav Styles ***************/
+
+#main-nav {
+    width: 100%;
+    background: lightblue;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.nav .name {
+    margin-right: auto;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+  }
+
+/*************** Header Styles ***************/
+
+.header-p {
+    text-align: center;
+}
+
+/*************** Main Styles ***************/
+
+.projects h2 {
+    text-align: center;
+}
+
+.cards-container img{
+  max-width: 100%;
+}
+
+.projects-card {
+  min-height: 250px;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.project-button {
+  /* position: absolute; */
+  bottom: 0;
+  right: 40px;
+}
+
+.project-link {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 6.5px;
+}
+  /*************** Footer Styles ***************/
+
+  .footer {
+    text-align: center;
+  }
+
+  .github {
+    background: none;
+    border: none;
+  }
+
+  /*************** Media Queries ***************/
+
+  @media screen and (min-width: 768px) {
+    .nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .projects-card {
+      display: flex;
+      gap: 40px;
+      border: none;
+      height: 200px;
+      width: 75%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  #main-nav {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+ }
+
+.alert-banner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(141, 140, 210);
+}
+
+.alert-banner p {
+    color: #fff;
+    font-weight: 200;
+}
+
+.drop-menu {
+    border: none;
+    color: white;
+    background-color: rgb(141, 140, 210);
+    cursor: pointer;
+}
+
+.drop-menu:hover {
+    color: rgb(79, 249, 87);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + .30rem);
+    width: 20%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 40%;
+    background-color: rgb(173, 171, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.dropdown-list {
+  padding-left: 0px;
+}
+
+.dropdown-list li {
+    list-style: none;
+    padding: 10px 0 10px 0;
+}
+
+.dropdown-list a:hover {
+    color:rgb(82, 82, 82);
+}
+
+.dropdown-item {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.show {display:block}
+
+
+
+
+
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
