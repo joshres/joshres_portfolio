@@ -10,6 +10,11 @@ function dropMenu() {
     document.getElementById("dropdown").classList.toggle("show");
 };
 
+// change the hamburger menu icon to an X 
+function changeMenu() {
+    dropContainer.classList.toggle("change");
+  }
+
 // close the dropdown menu if the user clicks oustide of it
 window.onclick = function(event) {
     if (!event.target.matches('.drop-container')) {
@@ -24,9 +29,5 @@ window.onclick = function(event) {
 };
 
 // target drop-menu and listen for click
-dropMenuClick.onclick = changeMenu(), dropMenu();
+dropMenuClick.onclick = function() {dropMenu(), changeMenu()};
 
-// change the hamburger menu icon to an X 
-function changeMenu() {
-    dropContainer.classList.toggle("change");
-  }
