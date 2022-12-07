@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="main-nav">
-        <div class="dropdown-options">
-            <h2 class="name"><a href="">Josh Resnick</a></h2>
-                <button class="drop-menu" >
-                    <div class="drop-container">
-                        <div class="bar1"></div>
-                        <div class="bar2 "></div>
-                        <div class="bar3"></div>
-                    </div> 
-                </button>
-                <div id="dropdown" class="dropdown">
-                    <ul class="dropdown-list">
-                        <li class="drop-item"><a class="dropdown-item" href="#projects">Projects</a></li>
-                        <li class="drop-item"><a class="dropdown-item" href="#about">About</a></li>
-                        <li class="drop-item"><a class="dropdown-item" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-        </div>
+
+    <div class="video-container">
+        <video autoplay muted loop id="my-video">
+                <source src="images/pexels-pink.mp4" type="video/mp4">
+        </video>
+            <div class="dropdown-options">
+                <h2 class="name">Josh Resnick</h2>
+                    <button class="drop-menu" >
+                        <div class="drop-container">
+                            <div class="bar1"></div>
+                            <div class="bar2 "></div>
+                            <div class="bar3"></div>
+                        </div> 
+                    </button>
+                    <div id="dropdown" class="dropdown">
+                        <ul class="dropdown-list">
+                            <li class="drop-item"><a class="dropdown-item" href="#projects">Projects</a></li>
+                            <li class="drop-item"><a class="dropdown-item" href="#about">About</a></li>
+                            <li class="drop-item"><a class="dropdown-item" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+            </div>
     </div>
 
     <header>
@@ -37,12 +41,12 @@
         <div class="projects" id="projects">
             <h2>Projects</h2>
             <div class="cards-container">
-                <section class="projects-card">
+                <div class="projects-card">
                     <img src="images/newsletter-signup-project.png" alt="snapshot of newsletter signup project">
                     <div class="text-container">
                         <div>
                             <h3>Newsletter Signup</h3>
-                            <p>This is a project utilizing something and something else with doing something while trying another thing that also combines doing more code to create a fun and exciting project</p>
+                            <p>This project challenged me to build a responsive, mobile-first registration form using a variety of HTML form elements. I am very pleased to have been able to create my first form and look forward to expanding my abilities to create more dynamic and extensive forms in the future.</p>
                         </div>
                         <div class="project-button">
                             <button class="project-link" type="button">
@@ -51,14 +55,14 @@
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section class="projects-card">
+                <div class="projects-card">
                     <img src="images/employee-directory-project.png" alt="snapshot of employee directory project">
                     <div class="text-container">
                         <div>
                             <h3>Employee Directory</h3>
-                            <p>This is a project utilizing something and something else with doing something while trying another thing that also combines doing more code to create a fun and exciting project</p>
+                            <p>Using JavaScript, I was able to create an employee directory by communicating with a third-party API. This project has helped me become more undestanding and familiar with having cohesive and well structured JavaScript. </p>
                         </div>
                         <div class="project-button">
                             <button class="project-link" type="button">
@@ -67,14 +71,14 @@
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section class="projects-card">
+                <div class="projects-card">
                     <img src="images/game-app-project.png" alt="snapshot of game show application project">
                     <div class="text-container">
                         <div>
                             <h3>Word Guessing App</h3>
-                            <p>This is a project utilizing something and something else with doing something while trying another thing that also combines doing more code to create a fun and exciting project</p>
+                            <p>Here is a browser version of a word guessing game called "Wheel of Success." This project utilized JavaScript to come up with a random phrase that players will try to guess by entering letters into the program. It was very exciting to learn how to utlize arrays in a broader way!</p>
                         </div>
                         <div class="project-button">
                             <button class="project-link" type="button">
@@ -83,14 +87,14 @@
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section class="projects-card">
+                <div class="projects-card">
                     <img src="images/photo-gallery-project.png" alt="snapshot of interactive photo gallery project">
                     <div class="text-container">
                         <div>
                             <h3>Interactive Photo Gallery</h3>
-                            <p>This is a project utilizing something and something else with doing something while trying another thing that also combines doing more code to create a fun and exciting project</p>
+                            <p>This project was great practice learning how to utilize CSS grid. With the help of JavaScript, I was able to create an interactive, searchable gallery of photos. A handy search bar was also created in order to filter through the photos.</p>
                         </div>
                         <div class="project-button">
                             <button class="project-link" type="button">
@@ -99,14 +103,14 @@
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section class="projects-card">
+                <div class="projects-card">
                     <img src="images/web-app-project.png" alt="snapshot of dashboard web application project">
                     <div class="text-container">
                         <div>
                             <h3>Web Dashboard App</h3>
-                            <p>This is a project utilizing something and something else with doing something while trying another thing that also combines doing more code to create a fun and exciting project</p>
+                            <p>Here is an interactive dashboard for a web application utilizing many variables including SVG graphics, charts, creating tables and other user interface components in a manner that promotes interactivity and usability.</p>
                         </div>
                         <div class="project-button">
                             <button class="project-link" type="button">
@@ -115,16 +119,16 @@
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
 
-        <section>
-            <div id="contact">
+        <div>
+            <div id="contact" class="contact">
                 <h2>Contact</h2>
                 <p>myemail@me.com</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -135,10 +139,20 @@
             </a>
         </button>
         <p class="copyright">&copy; 2022, Josh Resnick</p>
-      </footer>
-    
-     
-      <script src="js/app.js"></script>
+    </footer>
+
+    <div class="overlay hidden">
+        <div class="modal">
+            <button class="modal-close">X</button>
+            <div class="modal-content">
+
+                <!-- modal information will be added with JS here -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
 
 </body>
 </html>
