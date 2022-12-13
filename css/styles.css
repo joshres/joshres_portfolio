@@ -41,6 +41,11 @@ a {
   font-size: 40px;
   text-shadow: black 1px 0 10px;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: rgb(209, 238, 255);
 }
 
 .nav li {
@@ -68,6 +73,13 @@ a {
 .header-p {
   text-align: center;
   padding: 0px 10px;
+  font-size: 1.2em;
+}
+
+.about img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 70%;
 }
 
 /*************** Main Styles ***************/
@@ -79,7 +91,7 @@ a {
 }
 
 .cards-container img{
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .projects-card {
@@ -155,6 +167,7 @@ padding-left: 0px;
 .dropdown-list li {
   list-style: none;
   padding: 10px 0 10px 0;
+  font-size: 17.5px;
 }
 
 .dropdown-list a:hover {
@@ -211,6 +224,68 @@ padding-left: 0px;
     border: none;
   }
 
+/************ Overlay ***************/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -550%;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  top: 0;
+  width: 375px;
+  margin: 7% auto auto;
+  position: sticky;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+  z-index: 1055;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.modal-image {
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.modal-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-text-container hr {
+  border: 1px solid rgb(227, 227, 227);
+  margin: 15px 0 15px 0
+}
+
+.hidden {
+  display: none;
+}
+
   /*************** Media Queries ***************/
 
   @media screen and (min-width: 720px) {
@@ -254,6 +329,28 @@ padding-left: 0px;
       padding-bottom: 20px;
     }
 
+    .about {
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 0 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about img {
+      width: 200%;
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+
+    .header-p {
+      font-size: 1.2em;
+    }
+
+    .overlay {
+      bottom: -600%;
+    }
+
     /* .project-button {
       margin: auto;
       width: 20%;
@@ -283,6 +380,14 @@ padding-left: 0px;
 
     .projects h2 {
       font-size: 36px;
+    }
+
+    .overlay {
+      bottom: -385%;
+    }
+
+    .dropdown-list li {
+      font-size: 20px;
     }
   }
 
