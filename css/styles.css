@@ -258,7 +258,7 @@ padding-left: 0px;
 .modal {
   top: 0;
   width: fit-content;
-  max-width: 375px;
+  max-width: 450px;
   height: 760px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -342,11 +342,7 @@ padding-left: 0px;
     }
 
     .dropdown-options {
-      bottom: 10em;
-    }
-
-    .name {
-      font-size: 3em;
+      bottom: 12em;
     }
 
     #my-video {
@@ -387,11 +383,11 @@ padding-left: 0px;
 
   @media screen and (min-width: 1024px) {
     .dropdown-options {
-      bottom: 16em;
+      bottom: 18em;
     }
 
     .name {
-      font-size: 4em;
+      font-size: calc(15px + 6vw);
     }
 
     .bar1, .bar2, .bar3 {

@@ -1,6 +1,5 @@
 const dropContainer = document.querySelector('.drop-container');
 const dropMenuClick = document.querySelector('.drop-menu');
-const dropItem = document.querySelector('.dropdown-item');
 const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
@@ -28,7 +27,7 @@ dropMenuClick.onclick = function() {dropMenu(), changeMenu()};
 const dropList = document.querySelector('.dropdown-list');
 dropList.addEventListener("click" , e => {
   if (!e.target.matches('.drop-item')) {
-    let dropdown = document.getElementById("dropdown") 
+    let dropdown = document.getElementById("dropdown"); 
     if (dropdown.classList.contains("show")) {
       dropdown.classList.remove("show");
     }
@@ -36,12 +35,11 @@ dropList.addEventListener("click" , e => {
       dropContainer.classList.remove("change");
     }
   }
-  })
+  });
 
 ////////// Open Modal /////////////
 
-function displayModal(i) {
-  index = i;
+function displayModal() {
 
   const modalHTML = `
     <img class="modal-image" src="images/josh-river.jpg">
