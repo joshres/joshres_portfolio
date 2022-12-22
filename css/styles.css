@@ -20,7 +20,7 @@ a {
 .dropdown-options {
   display: inline-block;
   position: relative;
-  bottom: 8em;
+  bottom: calc(60px + 10vw);
   width: 100%;
   min-height: 30px;
   padding: 10px;
@@ -38,9 +38,9 @@ a {
 
 .name {
   color: white;
-  font-size: 40px;
+  font-size: calc(20px + 6vw);
   text-shadow: black 1px 0 10px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   cursor: pointer;
 }
 
@@ -56,6 +56,7 @@ a {
 
 .video-container {
   position: relative;
+  margin-bottom: -20px;
 }
 
 #my-video {
@@ -70,10 +71,22 @@ a {
 
 /*************** Header Styles ***************/
 
+.welcome{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-family: 'Great Vibes';
+  font-size: calc(25px + 7vw);
+  margin: auto 0;
+}
+
 .header-p {
   text-align: center;
   padding: 0px 10px;
   font-size: 1.2em;
+  line-height: 2;
 }
 
 .about img {
@@ -105,7 +118,6 @@ a {
 
 .project-button {
   margin: auto;
-  width: 20%;
 }
 
 .project-link {
@@ -131,6 +143,10 @@ a {
   text-align: center;
 }
 
+.text-container h3 {
+  margin-top: 0;
+}
+
 /*************** Hamburger Menu ***************/
 
 
@@ -151,10 +167,10 @@ a {
   position: absolute;
   left: 0;
   top: calc(100% + .30rem);
-  width: 20%;
+  width: 40%;
   padding: 10px;
   border-radius: 15px;
-  margin-left: 40%;
+  margin-left: 30%;
   background-color: rgb(125, 191, 232);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 3;
@@ -222,6 +238,11 @@ padding-left: 0px;
   .github {
     background: none;
     border: none;
+    list-style-type: none;
+  }
+
+  .web-links {
+    padding-left: 0;
   }
 
 /************ Overlay ***************/
@@ -230,13 +251,17 @@ padding-left: 0px;
   top: 0;
   left: 0;
   right: 0;
-  bottom: -550%;
+  bottom: -650%;
   background: rgba(100, 100, 100, 0.4);
 }
 
 .modal {
   top: 0;
-  width: 375px;
+  width: fit-content;
+  max-width: 375px;
+  height: 760px;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: 7% auto auto;
   position: sticky;
   text-align: center;
@@ -277,6 +302,10 @@ padding-left: 0px;
   margin-bottom: 20px;
 }
 
+.modal-p-container {
+  line-height: 1.4;
+}
+
 .modal-text-container hr {
   border: 1px solid rgb(227, 227, 227);
   margin: 15px 0 15px 0
@@ -288,7 +317,7 @@ padding-left: 0px;
 
   /*************** Media Queries ***************/
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 768px) {
     .nav {
       display: flex;
       justify-content: space-around;
@@ -321,7 +350,7 @@ padding-left: 0px;
     }
 
     #my-video {
-      width: 65%;
+      width: 77%;
     }
 
     .projects h2 {
@@ -347,23 +376,22 @@ padding-left: 0px;
       font-size: 1.2em;
     }
 
+    .welcome-text {
+      font-size: calc(25px + 6vw);
+    }
+
     .overlay {
       bottom: -600%;
     }
-
-    /* .project-button {
-      margin: auto;
-      width: 20%;
-    } */
   }
 
   @media screen and (min-width: 1024px) {
     .dropdown-options {
-      bottom: 20em;
+      bottom: 16em;
     }
 
     .name {
-      font-size: 5em;
+      font-size: 4em;
     }
 
     .bar1, .bar2, .bar3 {
@@ -383,7 +411,7 @@ padding-left: 0px;
     }
 
     .overlay {
-      bottom: -385%;
+      bottom: -500%;
     }
 
     .dropdown-list li {

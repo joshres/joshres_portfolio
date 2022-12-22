@@ -47,7 +47,11 @@ function displayModal(i) {
     <img class="modal-image" src="images/josh-river.jpg">
     <div class="mmodal-text-container">
       <h2 class="modal-name">Josh Resnick</h2>
-      <p class="modal-about">I love things!</p>
+      <div class="modal-p-container">
+        <p class="modal-about">Thank you for taking the time to get to know a bit more about me!</p>
+        <p>For the past 6 years, I have been working as a full-time cook. Though I have learned a lot and gained an immense amount of experience growing my abilities, I have realized that the kitchen is not the life for me. I thoroughly enjoy creating things from scratch and watching as they grow and evolve in to something beautiful and engaging.</p>
+        <p>To me, web development is more than just a career. It is an opportunity to create something bigger than myself. I look forward to being able to work with a variety of talented and knowledgable individuals who will be able to help me grow as a developer and person as well.</p>
+      </div> 
     </div>
   `;
 
